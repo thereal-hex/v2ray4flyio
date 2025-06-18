@@ -1,5 +1,10 @@
 name: Fly Deploy
 on: 
+name: fly-deploy
+  workflow_dispatch:
+  push:
+    branches:
+      - main
   push:
   schedule:
     - cron: '0 4 1 * *'
